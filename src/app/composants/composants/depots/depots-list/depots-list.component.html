@@ -1,0 +1,60 @@
+
+<div>
+  
+  <div class="container mt-5">
+ 
+    <div class="row align-items-center">
+      <div class="col-sm-6 col-12 mb-4 mb-sm-0">
+          <!-- Title -->
+          <h1 class="h2 mb-0 ls-tight">Liste des Depot  </h1>
+      </div> <!-- Actions -->
+      <div class="col-sm-6 col-12 text-sm-end">
+          <div class="mx-n1"> 
+      
+              
+              <a   (click)="ajouterDepot()" class="btn d-inline-flex btn-sm btn-primary mx-1">
+                  <span class=" pe-2"> <i class="bi bi-plus"></i> </span>
+                   <span>Creer un depot</span> 
+              </a>
+          </div>
+      </div> 
+  </div> <!-- Nav -->
+
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Code Dépôt</th>
+      <th>Nom</th>
+      <th>Adresse</th>
+      <th>Responsable</th>
+      <th>Capacité</th>
+      <th>Articles</th>
+      <th>Mouvements</th>
+      <th>Inventaires</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let depot of depots">
+      <td>{{ depot.codeDepot }}</td>
+      <td>{{ depot.nom }}</td>
+      <td>{{ depot.adresse }}</td>
+      <td>{{ depot.responsable }}</td>
+      <td>{{ depot.capacite }}</td>
+      <td><a routerLink="/app-depots/articles-par-depot/{{ depot.id }}"><mat-icon>grid_on</mat-icon></a></td>
+      <td><a routerLink="/app-depots/mouvements-par-depot/{{ depot.id }}"><mat-icon>attach_money</mat-icon></a></td>
+      <td><a routerLink="/app-depots/inventaires-par-depot/{{ depot.id }}"><mat-icon>event</mat-icon></a></td>
+      <td>
+        <button (click)="modifierDepot(depot.id)" class="mat-icon-button">
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button (click)="supprimerDepot(depot.id)" class="mat-icon-button">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</div>

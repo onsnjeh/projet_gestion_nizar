@@ -1,0 +1,31 @@
+
+
+
+
+<div class="container mt-5">
+ <h1 class="h2 mb-4">Detail de l'utilisateur {{ User?.name }} </h1>
+ <form *ngIf="User">
+     <div class="form-group">
+     <label for="id">ID:</label>
+     <input type="number" id="id" [value]="User.id" name="id" class="form-control" disabled>
+   </div>
+   <div class="form-group">
+     <label for="name">Nom:</label>
+     <input type="text" id="name" [value]="User.name" name="name" class="form-control"disabled>
+   </div>
+   <div class="form-group">
+     <label for="email">Email:</label>
+     <input type="email" id="email" [value]="User.email" name="email" class="form-control"disabled>
+   </div>
+   <div class="form-group">
+     <label for="phone">Téléphone:</label>
+     <input type="text" id="phone" [value]="User.phone" name="phone" class="form-control"disabled>
+   </div>
+   <div class="form-group">
+     <label for="role">Rôle:</label>
+     <input type="text" id="role" [value]="User.role" name="role" class="form-control"disabled>
+   </div>
+   <button type="submit" class="btn btn-primary" (click)="annuler()">Annuler</button>
+ </form>
+</div>
+

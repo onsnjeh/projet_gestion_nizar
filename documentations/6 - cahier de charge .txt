@@ -1,0 +1,31 @@
+L'application de gestion des stocks que vous souhaitez développer devrait comporter les fonctionnalités suivantes :
+
+    Gestion des dépôts : 
+    Cette fonctionnalité permettra à l'utilisateur de créer et de modifier les différents dépôts de l'entreprise. 
+    Elle devrait inclure les informations de base sur chaque dépôt, telles que le nom, l'adresse et les contacts.
+
+    Gestion des articles : 
+    Cette fonctionnalité permettra à l'utilisateur de créer et de modifier les articles avec les informations nécessaires,
+     telles que le nom, la description, la quantité disponible, le prix unitaire, etc. Les articles doivent être associés à un dépôt particulier.
+
+    Gestion des achats : 
+    Cette fonctionnalité permettra à l'utilisateur de créer et de modifier les bons de commande pour l'achat de produits dans le dépôt central. 
+    Les bons de commande doivent être associés à un fournisseur et à un dépôt particulier.
+
+    Réception des produits : 
+    Cette fonctionnalité permettra à l'utilisateur de recevoir les produits achetés dans le dépôt central et de mettre à jour les stocks dans le système.
+     Les quantités reçues doivent être vérifiées et enregistrées dans le système.
+
+    Gestion des transferts : 
+    Cette fonctionnalité permettra à l'utilisateur de créer et de modifier les bons de transfert pour le transfert des produits entre
+     les différents dépôts de l'entreprise. Les bons de transfert doivent être associés à un dépôt source et à un dépôt de destination.
+
+    Suivi des transferts :
+     Cette fonctionnalité permettra à l'utilisateur de suivre les transferts de produits entre les différents dépôts de l'entreprise et 
+     de mettre à jour les stocks dans le système. Les quantités transférées doivent être vérifiées et enregistrées dans le système.
+
+    Module d'inventaire :
+     Cette fonctionnalité permettra à l'utilisateur de réaliser des inventaires physiques et comptables pour chaque dépôt de l'entreprise.
+      Les utilisateurs doivent pouvoir entrer les quantités physiques de chaque article dans chaque dépôt et les comparer avec les quantités enregistrées dans le système. Les différences doivent être enregistrées et des rapports d'inventaire doivent être générés.
+
+En résumé, l'application de gestion des stocks devrait permettre la gestion des dépôts, des articles, des achats, des transferts, de la réception, du suivi et de l'inventaire des stocks.

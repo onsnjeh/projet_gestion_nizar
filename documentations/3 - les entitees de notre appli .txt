@@ -1,0 +1,33 @@
+Voici une liste possible d'entités que vous pouvez considérer pour votre application web Angular :
+
+    Dépôt : représente l'endroit où sont stockés les produits.
+    Produit : représente les articles qui sont vendus, achetés ou en stock.
+    Stock : représente la quantité de chaque produit disponible dans chaque dépôt.
+    Entrée : représente le mouvement des produits entrant dans le stock.
+    Sortie : représente le mouvement des produits sortant du stock.
+    Inventaire : représente le comptage physique des produits en stock pour assurer l'exactitude des quantités enregistrées.
+    Transfert : représente le mouvement des produits d'un dépôt à un autre.
+    Historique des transferts : représente la trace de chaque transfert effectué entre les dépôts.
+
+
+En utilisant ces entités, vous pouvez créer un modèle de données qui permettra à votre application de suivre 
+les mouvements de stock de chaque produit dans chaque dépôt, de maintenir une quantité de stock précise et 
+de déterminer le montant total de chaque produit en stock.
+
+
+
+En plus des entités que j'ai proposées précédemment, voici d'autres entités que vous pouvez prendre en compte dans votre application :
+
+    Fournisseur : représente l'entreprise ou la personne qui fournit les produits à vendre.
+    Client : représente l'entreprise ou la personne qui achète les produits vendus.
+    Facture : représente la facture émise pour la vente de produits à un client ou la réception de produits d'un fournisseur.
+    Paiement : représente le paiement reçu pour une facture émise ou le paiement effectué pour une facture reçue.
+    Utilisateur : représente les personnes qui utilisent l'application.
+    Rôle : représente les rôles attribués aux utilisateurs (par exemple, administrateur, opérateur de stock, vendeur, etc.).
+    Catégorie de produits : représente la catégorie à laquelle appartient chaque produit (par exemple, alimentation, électronique, etc.).
+    Unité de mesure : représente l'unité utilisée pour mesurer la quantité de chaque produit en stock (par exemple, kilogramme, litre, pièce, etc.).
+    Code-barres : représente le code unique attribué à chaque produit pour faciliter la gestion des stocks et la vente.
+
+En ajoutant ces entités, vous pouvez enrichir votre application pour inclure des fonctionnalités telles que la gestion des fournisseurs 
+et des clients, la facturation et les paiements, la gestion des utilisateurs et des rôles, la catégorisation des produits, 
+l'attribution des codes-barres pour faciliter la gestion des stocks, etc.

@@ -1,0 +1,37 @@
+
+    <div class="container">
+      <h1>Sortie de stock</h1>
+      <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="id">ID:</label>
+          <input type="number" id="id" [(ngModel)]="nouvelleSortie.id" name="id" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="code">Code </label>
+          <input type="text" id="codeSortie" [(ngModel)]="nouvelleSortie.code" name="code" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="date">date Entree:</label>
+          <input type="date" id="dateEntree" [(ngModel)]="nouvelleSortie.dateEntree" name="dateEntree" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="quantite">quantite</label>
+          <input type="quantite" id="quantite" [(ngModel)]="nouvelleSortie.quantite" name="quantite" class="form-control">
+        </div>
+        
+        <div class="form-group">
+          <label for="produitId">produitId:</label>
+          <input type="text" id="produitId" [(ngModel)]="nouvelleSortie.produitId" name="produitId" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="depotId">depotId:</label>
+          <input type="text" id="depotId" [(ngModel)]="nouvelleSortie.depotId" name="depotId" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">Ajouter  </button>
+      </form>
+
+     
+          
+    </div>

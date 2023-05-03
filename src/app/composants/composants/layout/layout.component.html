@@ -1,0 +1,131 @@
+<mat-sidenav-container class="sidenav-container ">
+  <mat-sidenav #drawer   class="sidenav mat-primary"  fixedInViewport
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false" style="width: 330px;">
+
+    <mat-toolbar color="primary">Menu</mat-toolbar>
+
+
+    <mat-nav-list>
+ 
+      <a mat-list-item routerLink="/home" class="custom-list-item">
+        <span>Accueil</span>
+        <mat-icon class="mat-primary">home</mat-icon>
+      </a>
+      
+      
+
+      <mat-divider></mat-divider>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title> Utilisateurs</mat-panel-title>
+          <mat-icon class="mat-primary">person_pin</mat-icon>
+
+        </mat-expansion-panel-header>
+        <a mat-list-item routerLink="/app-users">Utilisateurs</a>
+        <a mat-list-item routerLink="/app-roles">Rôles</a>
+      </mat-expansion-panel>
+
+      <mat-divider></mat-divider>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>Stocks</mat-panel-title>
+          <mat-icon class="mat-primary">storage</mat-icon>
+        </mat-expansion-panel-header>
+
+        <a mat-list-item routerLink="/app-depots">Dépôts</a>
+        <a mat-list-item routerLink="/app-articles">Articles</a>
+        <a mat-list-item routerLink="/app-stocks">Stocks</a>
+        <a mat-list-item routerLink="/app-entrees">Entrées</a>
+        <a mat-list-item routerLink="/app-sorties">Sorties</a>
+        <a mat-list-item routerLink="/app-inventaire">Inventaire</a>
+        <a mat-list-item routerLink="/app-transferts">Transferts</a>
+        <a mat-list-item routerLink="/app-historique-transferts">Historique des transferts</a>
+      </mat-expansion-panel>
+
+      <mat-divider></mat-divider>
+
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>Ventes</mat-panel-title>
+          <mat-icon class="mat-primary">attach_money</mat-icon>
+        </mat-expansion-panel-header>
+        <a mat-list-item routerLink="/app-factures-vente">Factures</a>
+        <a mat-list-item routerLink="/app-paiements-vente">Paiements</a>
+      </mat-expansion-panel>
+
+      <mat-divider></mat-divider>
+
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>Achats</mat-panel-title>
+          <mat-icon class="mat-primary">shopping_cart</mat-icon>
+        </mat-expansion-panel-header>
+        <a mat-menu-item routerLink="/app-factures-achat">Factures</a>
+        <a mat-menu-item routerLink="/app-paiements-achat">Paiements</a>
+      </mat-expansion-panel>
+
+      <mat-divider></mat-divider>
+
+      <a mat-list-item routerLink="/app-fournisseurs">
+        <mat-panel-title>Fournisseurs</mat-panel-title>
+        <!--           <mat-icon >people_alt</mat-icon> -->
+      </a>
+
+      <a mat-list-item routerLink="/app-clients">
+        <mat-panel-title>Clients</mat-panel-title>
+        <!--           <mat-icon >people_alt</mat-icon> -->
+      </a>
+
+      <a mat-list-item routerLink="/app-categories-produits">
+        <mat-panel-title>Catégories Articles</mat-panel-title>
+        <!--           <mat-icon mat-list-icon>category</mat-icon> -->
+      </a>
+
+      <a mat-list-item routerLink="/app-unites-mesure">
+        <mat-panel-title>Unités de mesure</mat-panel-title>
+        <!--           <mat-icon  >straighten</mat-icon> -->
+      </a>
+
+      <a mat-list-item routerLink="/app-codes-barres">
+        <mat-panel-title>Codes-barres</mat-panel-title>
+        <!--         <mat-icon >qr_code_2</mat-icon>  -->
+      </a>
+
+      <a mat-list-item href="/app-qr-codes">
+        <mat-panel-title>QR Codes</mat-panel-title>
+        <mat-icon class="mat-primary">qr_code_2</mat-icon>
+      </a>
+
+    </mat-nav-list>
+
+
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>Application de Gestion de Stock</span>
+    </mat-toolbar>
+    <div class="content">
+      <!-- Contenu de l'application -->
+
+      <router-outlet></router-outlet>
+
+
+    </div>
+    <footer class="footer">
+      <mat-toolbar class="mat-elevation-z2" color="primary">
+        <span class="spacer"></span>
+        <span>&copy; 2023 StockIn. Tous les droits sont réservés.</span>
+        <span class="spacer"></span>
+      </mat-toolbar>
+    </footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>

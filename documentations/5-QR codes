@@ -1,0 +1,31 @@
+
+
+Le QR code peut être utilisé dans plusieurs scénarios dans cette application :
+
+    Génération de QR code pour chaque produit : En attribuant un code QR unique à chaque produit,
+     vous pouvez faciliter la gestion du stock en scannant rapidement le code QR pour obtenir des informations sur le produit, 
+     telles que sa quantité en stock, son prix, sa catégorie, etc.
+
+    Utilisation de QR code pour la gestion des entrées et des sorties de stock : 
+    En utilisant des codes QR pour chaque entrée et sortie de stock, vous pouvez rapidement enregistrer les mouvements de stock dans
+     l'application en scannant simplement les codes QR correspondants.
+
+    Génération de QR code pour les factures : En générant un code QR unique pour chaque facture,
+     vous pouvez faciliter le paiement des factures en permettant aux clients de scanner le code QR pour effectuer rapidement le paiement correspondant.
+
+    Utilisation de QR code pour la gestion des transferts de stock : En utilisant des codes QR pour chaque transfert de stock, 
+    vous pouvez enregistrer rapidement les mouvements de produits d'un dépôt à un autre en scannant simplement les codes QR correspondants.
+
+    Utilisation de QR code pour la gestion des inventaires : En générant des codes QR pour chaque produit à inventorier,
+     vous pouvez faciliter le comptage physique des produits en stock en scannant simplement les codes QR correspondants.
+
+    Utilisation de QR code pour la gestion des fournisseurs et des clients : En attribuant des codes QR uniques à chaque
+     fournisseur et à chaque client, vous pouvez faciliter la gestion des contacts en scannant simplement les codes QR correspondants
+      pour obtenir des informations sur le fournisseur ou le client.
+
+En général, l'utilisation de codes QR peut faciliter et accélérer la gestion de stock, la facturation, le paiement,
+la gestion des transferts et la gestion des contacts dans l'application.
+
+
+
+

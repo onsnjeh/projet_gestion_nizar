@@ -1,0 +1,61 @@
+.qr-card {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .qr-card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .qr-card-subtitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .qr-card-list-item {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .qr-card-link {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #1976d2;
+  }
+  
+  .qr-card-button {
+    margin-top: 10px;
+  }
+  .custom-list-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .custom-list-item .mat-list-item-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .custom-list-item a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+  }
+  
+  .custom-list-item:hover {
+    background-color: #1d08d6; /* Change la couleur de fond */
+    cursor: pointer; /* Change le curseur de la souris en une main pour indiquer que l'élément est cliquable */
+  }
+  
+  .custom-list-item:hover a {
+    color: #ffffff; /* change la couleur du texte en blanc */
+    background-color: #1d08d6; /* change la couleur de fond en bleu foncé */
+  }

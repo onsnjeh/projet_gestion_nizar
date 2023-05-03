@@ -1,0 +1,35 @@
+
+<div class="container mt-5">
+    <h1 class="h2 mb-4">Modifier stock {{ entrees?.quantite}} </h1>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="id">ID:</label>
+        <input type="number" id="id" [(ngModel)]="entrees.id" name="id" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="codeEntree">Code Entree:</label>
+        <input type="text" id="codeEntree" [(ngModel)]="entrees.codeEntree" name="codeEntree" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="dateentree">date Entree:</label>
+        <input type="date" id="dateentree" [(ngModel)]="entrees.dateEntree" name="dateentree" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="quantite">quantite</label>
+        <input type="quantite" id="quantite" [(ngModel)]="entrees.quantite" name="quantite" class="form-control">
+      </div>
+
+
+      <div class="form-group">
+        <label for="produitId">produitId:</label>
+        <input type="text" id="produitId" [(ngModel)]="entrees.produitId" name="produitId" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="depotId">depotId:</label>
+        <input type="text" id="depotId" [(ngModel)]="entrees.depotId" name="depotId" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-primary">Sauvegarder la modification</button>
+    </form>
+  </div>

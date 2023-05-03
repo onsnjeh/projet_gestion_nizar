@@ -1,0 +1,46 @@
+<div>
+    <h3>Liste des Depots :</h3>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Code Dépôt</th>
+                <th>Nom</th>
+                <th>Adresse</th>
+                <th>Responsable</th>
+                <th>Capacité</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            <tr *ngFor="let depot of depots" [class.selected]="depot === selectedDepot" (click)="selectedDepot = depot">
+                <td>{{ depot.codeDepot }}</td>
+                <td>{{ depot.nom }}</td>
+                <td>{{ depot.adresse }}</td>
+                <td>{{ depot.responsable }}</td>
+                <td>{{ depot.capacite }}</td>
+
+            </tr>
+        </tbody>
+    </table>
+        <br> <br>
+
+        <div class="text-center mt-3">
+        <div>
+              <h2>vous allez affecter l'article {{this.article.nom }} au dépot : {{  selectedDepot!.codeDepot }} - {{  selectedDepot!.nom }}  </h2>
+
+        </div>
+        <br>
+
+    <div>
+        <button class="btn btn-primary" [disabled]="!selectedDepot" (click)="affecterArticle(selectedDepot,this.article)">Affecter</button>
+    </div>
+
+    <br> <br>
+    <div *ngIf="successMessage" class="success-message"><i class="bi bi-check-circle-fill"></i>   {{successMessage}}</div>
+    <div *ngIf="errorMessage" class="error-message"><i class="bi bi-exclamation-triangle-fill"></i>   {{errorMessage}}</div>
+
+    </div>
+
+</div>

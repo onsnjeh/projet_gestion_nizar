@@ -1,0 +1,40 @@
+
+    <div class="container">
+      <h1>Ajouter Produit</h1>
+
+
+
+        <form (submit)="onSubmit()">
+
+
+
+            <div class="form-group">
+             <label for="id">Les IDs </label>
+             <input type="number" id="idProduit" name="id" (ngModel)="this.nouveauProduit.id" class="form-control">
+           </div>
+
+           <div class="form-group">
+             <label for="codeProduit">Code Dépôt</label>
+             <input type="text" id="codeProduit" name="codeProduit" (ngModel)="this.nouveauProduit.codeProduit" class="form-control">
+           </div>
+            <div class="form-group">
+             <label for="nom">Nom</label>
+             <input type="text" id="nomProduit" name="nom" (ngModel)="this.nouveauProduit.nom" class="form-control">
+           </div>
+            <div class="form-group">
+             <label for="description">description</label>
+             <input type="text" id="descriptionProduit" name="description" (ngModel)="this.nouveauProduit.description" class="form-control">
+           </div>
+            <div class="form-group">
+             <label for="prix">prix</label>
+             <input type="number" id="prixProduit" name="prix" (ngModel)="this.nouveauProduit.prix" class="form-control">
+           </div>
+
+
+        <br>
+         <button type="submit" class="btn btn-primary">Créer Produit</button>
+
+      </form>
+
+    </div>
+  

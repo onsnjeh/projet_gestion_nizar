@@ -1,0 +1,37 @@
+ 
+  
+
+
+  <mat-card class="qr-card">
+    <mat-card-header>
+      <mat-card-title class="qr-card-title">Utilisation de QR code</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <h4 class="qr-card-subtitle">Le QR code peut être utilisé dans plusieurs scénarios dans cette application :</h4>
+      <ul>
+        <li class="qr-card-list-item">Faciliter et accélérer la gestion de stock</li>
+        <li class="qr-card-list-item">Facturation</li>
+        <li class="qr-card-list-item">Paiement</li>
+        <li class="qr-card-list-item">Gestion des transferts</li>
+        <li class="qr-card-list-item">Gestion des contacts dans l'application</li>
+      </ul>
+      <p>Vous pouvez cliquer sur les liens suivants pour plus d'informations :</p>
+      
+      <mat-list>
+        <mat-list-item *ngFor="let paragraphe of paragraphes" class=" custom-list-item">
+          <a matLine   (click)="ouvrirPopupQrCodeArticle(paragraphe)" >{{ paragraphe }}</a>
+
+           
+        </mat-list-item>
+
+       
+      </mat-list>
+
+      
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button color="primary" (click)="afficherSpinner()" class="qr-card-button">Chargement en cours</button>
+    </mat-card-actions>
+    <mat-spinner *ngIf="loading"></mat-spinner>
+  </mat-card>
+  

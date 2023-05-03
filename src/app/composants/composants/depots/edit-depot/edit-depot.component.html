@@ -1,0 +1,32 @@
+
+
+
+<div class="container mt-5">
+    <h1 class="h2 mb-4">Modifier le depot {{ nouveauDepot?.nom }} </h1>
+    <form (submit)="onSubmit()">
+        <div class="form-group">
+         <label for="codeDepot">Code Dépôt</label>
+         <input type="text" id="codeDepot" name="codeDepot" [(ngModel)]="nouveauDepot.codeDepot" class="form-control">
+       </div>
+        <div class="form-group">
+         <label for="nom">Nom</label>
+         <input type="text" id="nom" name="nom" [(ngModel)]="nouveauDepot.nom" class="form-control">
+       </div>
+        <div class="form-group">
+         <label for="adresse">Adresse</label>
+         <input type="text" id="adresse" name="adresse" [(ngModel)]="nouveauDepot.adresse" class="form-control">
+       </div>
+        <div class="form-group">
+         <label for="responsable">Responsable</label>
+         <input type="text" id="responsable" name="responsable" [(ngModel)]="nouveauDepot.responsable" class="form-control">
+       </div>
+        <div class="form-group">
+         <label for="capacite">Capacité(en Tonne)</label>
+         <input type="number" id="capacite" name="capacite" [(ngModel)]="nouveauDepot.capacite" class="form-control">
+       </div>
+       <br>
+        <button type="submit" class="btn btn-primary"> Sauvegarder  </button>
+
+     </form>
+  </div>
+  

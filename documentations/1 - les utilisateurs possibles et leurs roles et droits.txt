@@ -1,0 +1,23 @@
+
+    Administrateur :
+    l'administrateur est responsable de la gestion globale de l'application. Il peut créer et supprimer des comptes d'utilisateurs,
+    configurer les paramètres de l'application, gérer les produits, les achats et les ventes, ainsi que consulter les rapports et les statistiques.
+     Il a tous les droits d'accès et de modification.
+
+    Manager de stock / Gestionnaires de produits:
+     le manager de stock est responsable de la gestion du stock.
+     Il peut consulter et modifier la quantité de chaque produit en stock, ajouter ou supprimer des produits, suivre les niveaux de stock et recevoir des alertes lorsque les niveaux sont bas.
+      Il peut également générer des rapports de stock pour aider à la prise de décision. Il a des droits d'accès et de modification limités.
+
+    Vendeur :
+    le vendeur est responsable de la gestion des ventes.
+    Il peut ajouter des ventes, consulter les produits en stock, vérifier la disponibilité des produits, et suivre les montants de vente pour chaque produit.
+    Il n'a pas le droit de modifier la quantité de produits en stock ou d'ajouter de nouveaux produits.
+
+    Comptable :
+    le comptable est responsable de la gestion financière de l'entreprise.
+     Il peut consulter les ventes, les achats, les paiements et les factures, et générer des rapports financiers pour aider à la prise de décision.
+     Il n'a pas le droit de modifier les produits en stock ou de créer de nouvelles ventes.
+
+    Utilisateur standard / Clients:
+    un utilisateur standard peut accéder à l'application pour consulter les produits en stock et les ventes, mais il n'a pas le droit de modifier les produits ou d'ajouter de nouvelles ventes.

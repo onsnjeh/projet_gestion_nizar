@@ -1,0 +1,30 @@
+
+
+<div class="container">
+  <mat-card class="card">
+    <mat-card-header>
+      <mat-card-title class="title">Connexion</mat-card-title>
+    </mat-card-header>
+
+    
+
+    <mat-card-content class="content">
+      
+      <div class="hero-section">
+        <h1 class="hero-title">StockIn</h1>
+      </div>
+
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="form">
+        <mat-form-field class="field" appearance="fill">
+          <mat-label>Nom d'utilisateur</mat-label>
+          <input matInput formControlName="username" required>
+        </mat-form-field>
+        <mat-form-field class="field" appearance="fill">
+          <mat-label>Mot de passe</mat-label>
+          <input matInput type="password" formControlName="password" required>
+        </mat-form-field>
+        <button mat-raised-button color="primary" routerLink="/pageDashboard" type="submit" class="button">Connexion</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

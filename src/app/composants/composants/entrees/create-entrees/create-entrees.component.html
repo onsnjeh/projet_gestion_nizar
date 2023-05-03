@@ -1,0 +1,38 @@
+
+    <div class="container">
+      <h1>entree de stock</h1>
+      <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="id">ID:</label>
+          <input type="number" id="id" [(ngModel)]="nouvelleEntree.id" name="id" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="codeEntree">Code Entree:</label>
+          <input type="text" id="codeEntree" [(ngModel)]="nouvelleEntree.codeEntree" name="codeEntree" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="dateentree">date Entree:</label>
+          <input type="date" id="dateentree" [(ngModel)]="nouvelleEntree.dateEntree" name="dateentree" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="quantite">quantite</label>
+          <input type="quantite" id="quantite" [(ngModel)]="nouvelleEntree.quantite" name="quantite" class="form-control">
+        </div>
+        
+        <div class="form-group">
+          <label for="produitId">produitId:</label>
+          <input type="text" id="produitId" [(ngModel)]="nouvelleEntree.produitId" name="produitId" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="depotId">depotId:</label>
+          <input type="text" id="depotId" [(ngModel)]="nouvelleEntree.depotId" name="depotId" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">Ajouter  </button>
+      </form>
+
+     
+          
+    </div>
+ 

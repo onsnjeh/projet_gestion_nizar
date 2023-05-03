@@ -1,0 +1,993 @@
+{
+  "users": [
+    {
+      "id": 2,
+      "name": "Mohamed Zidi",
+      "email": "Zid@gmail.com",
+      "phone": "260011001",
+      "role": "Manager de stock / Gestionnaires de produits",
+      "password": "manager"
+    },
+    {
+      "id": 3,
+      "name": "Zied Aloui",
+      "email": "Aloui@gmail.com",
+      "phone": "2600110011",
+      "role": "Vendeur",
+      "password": "seller"
+    },
+    {
+      "id": 4,
+      "name": "Haithem Mednini",
+      "email": "Mednini@gmail.com",
+      "phone": "2600110011",
+      "role": "Comptable",
+      "password": "accountant"
+    },
+    {
+      "id": 10,
+      "name": "zioudi",
+      "email": "zy.anas@gmail.com",
+      "password": "d2bQaumqrVCF2AE",
+      "phone": "2600110011",
+      "role": "Administrateur"
+    },
+    {
+      "id": 12,
+      "name": "zied",
+      "email": "ayadi@gmail.com",
+      "password": "d2bQaumqrVCF2AE",
+      "phone": "21111111",
+      "role": "Administrateur"
+    },
+    {
+      "id": 15,
+      "name": "Adrien",
+      "email": "abc@hotmail.com",
+      "password": "d2bQaumqrVCF2AE",
+      "phone": "2600110011",
+      "role": "Administrateur"
+    },
+    {
+      "id": 20,
+      "name": "Adrien",
+      "email": "adrr@hotmail.com",
+      "password": "d2bQaumqrVCF2AE",
+      "phone": "065898989",
+      "role": "Gestionnaire"
+    },
+    {
+      "id": 55,
+      "name": "nizar nizar",
+      "email": "nizar@gmail.com",
+      "password": "123456",
+      "phone": "14258369",
+      "role": "expert"
+    }
+  ],
+  "depots": [
+    {
+      "id": 2,
+      "codeDepot": "Dep2088",
+      "nom": "MAND",
+      "adresse": "9 rue de la rupublique Sfax",
+      "responsable": "Felhi Zied",
+      "capacite": 150,
+      "articles": [
+        {
+          "id": 3,
+          "nom": "Cahier",
+          "description": "Cahier 100 pages",
+          "prix": 2.5,
+          "quantite": 50,
+          "seuilMinimum": 10,
+          "seuilMaximum": 100,
+          "categorie": "Papeterie",
+          "dateAjout": "2023-04-06"
+        },
+        {
+          "id": 4,
+          "nom": "Stylo",
+          "description": "Stylo à bille noir",
+          "prix": 0.5,
+          "quantite": 100,
+          "seuilMinimum": 20,
+          "seuilMaximum": 200,
+          "categorie": "Papeterie",
+          "dateAjout": "2023-04-06"
+        },
+        {
+          "id": 5,
+          "nom": "Classeur",
+          "description": "Classeur à 4 anneaux",
+          "prix": 7,
+          "quantite": 20,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Papeterie",
+          "dateAjout": "2023-04-06"
+        },
+        {
+          "id": 1,
+          "nom": "Pomme",
+          "description": "Fruit rouge et rond",
+          "prix": 1.5,
+          "quantite": 20,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Fruits",
+          "dateAjout": "2023-04-06T08:00:00Z"
+        },
+        {
+          "id": 2,
+          "nom": "Poire",
+          "description": "Fruit jaune et ovale",
+          "prix": 2,
+          "quantite": 15,
+          "seuilMinimum": 3,
+          "seuilMaximum": 30,
+          "categorie": "Fruits",
+          "dateAjout": "2023-04-06T08:00:00Z"
+        },
+        {
+          "id": 24,
+          "nom": "Article 24",
+          "description": "Description de l'article 24",
+          "prix": 5,
+          "quantite": 150,
+          "seuilMinimum": 25,
+          "seuilMaximum": 250,
+          "categorie": "Catégorie 2",
+          "dateAjout": "2023-04-15T12:00:00.000Z"
+        },
+        {
+          "id": 6,
+          "nom": "Tomate",
+          "description": "Tomates mûres et juteuses",
+          "prix": 2.5,
+          "quantite": 200,
+          "seuilMinimum": 20,
+          "seuilMaximum": 300,
+          "categorie": "Légumes",
+          "dateAjout": "2023-03-01"
+        }
+      ],
+      "inventaires": [
+        {
+          "id": 5,
+          "code": "INV005",
+          "quantite": 8,
+          "date": "2022-03-20T10:00:00Z",
+          "depotId": "2",
+          "codeInventaire": "INVT20220320"
+        },
+        {
+          "id": 6,
+          "code": "INV006",
+          "quantite": 12,
+          "date": "2022-03-21T14:30:00Z",
+          "depotId": "2",
+          "codeInventaire": "INVT20220321"
+        },
+        {
+          "id": 7,
+          "code": "INV007",
+          "quantite": 6,
+          "date": "2022-03-22T09:15:00Z",
+          "depotId": "2",
+          "codeInventaire": "INVT20220322"
+        },
+        {
+          "id": 8,
+          "code": "INV008",
+          "quantite": 18,
+          "date": "2022-03-23T16:45:00Z",
+          "depotId": "2",
+          "codeInventaire": "INVT20220323"
+        },
+        {
+          "id": 8,
+          "code": "INV008",
+          "quantite": 18,
+          "date": "2022-03-23T16:45:00Z",
+          "depotId": "2",
+          "codeInventaire": "INVT20220323"
+        }
+      ],
+      "mouvements": [],
+      "couts": 0
+    },
+    {
+      "id": 3,
+      "codeDepot": "Dep5240",
+      "nom": "TOMATES",
+      "adresse": "15 rue de la paie Sfax",
+      "responsable": "Saoudi Nidhal",
+      "capacite": 245,
+      "articles": [
+        {
+          "id": 6,
+          "nom": "Tomate",
+          "description": "Tomates mûres et juteuses",
+          "prix": 2.5,
+          "quantite": 200,
+          "seuilMinimum": 20,
+          "seuilMaximum": 300,
+          "categorie": "Légumes",
+          "dateAjout": "2023-03-01"
+        },
+        {
+          "id": 7,
+          "nom": "Concombre",
+          "description": "Concombres frais et croquants",
+          "prix": 1.5,
+          "quantite": 150,
+          "seuilMinimum": 15,
+          "seuilMaximum": 250,
+          "categorie": "Légumes",
+          "dateAjout": "2023-03-05"
+        },
+        {
+          "id": 8,
+          "nom": "Poivron",
+          "description": "Poivrons rouges, verts et jaunes",
+          "prix": 3,
+          "quantite": 100,
+          "seuilMinimum": 10,
+          "seuilMaximum": 150,
+          "categorie": "Légumes",
+          "dateAjout": "2023-03-10"
+        },
+        {
+          "id": 1,
+          "nom": "Pomme",
+          "description": "Fruit rouge et rond",
+          "prix": 1.5,
+          "quantite": 20,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Fruits",
+          "dateAjout": "2023-04-06T08:00:00Z"
+        },
+        {
+          "id": 3,
+          "nom": "Cahier",
+          "description": "Cahier 100 pages",
+          "prix": 2.5,
+          "quantite": 50,
+          "seuilMinimum": 10,
+          "seuilMaximum": 100,
+          "categorie": "Papeterie",
+          "dateAjout": "2023-04-06"
+        },
+        {
+          "id": 23,
+          "nom": "Article 23",
+          "description": "Description de l'article 23",
+          "prix": 15,
+          "quantite": 200,
+          "seuilMinimum": 30,
+          "seuilMaximum": 300,
+          "categorie": "Catégorie 1",
+          "dateAjout": "2023-04-15T12:00:00.000Z"
+        },
+        {
+          "id": 26,
+          "nom": "Article 26",
+          "description": "Description de l'article 26",
+          "prix": 8,
+          "quantite": 100,
+          "seuilMinimum": 20,
+          "seuilMaximum": 200,
+          "categorie": "Catégorie 2",
+          "dateAjout": "2023-04-15T12:00:00.000Z"
+        },
+        {
+          "id": 28,
+          "nom": "Article 28",
+          "description": "Ceci est l'article numéro 28",
+          "prix": 10.99,
+          "quantite": 50,
+          "seuilMinimum": 10,
+          "seuilMaximum": 100,
+          "categorie": "Catégorie A",
+          "dateAjout": "2022-05-01T00:00:00Z"
+        }
+      ],
+      "inventaires": [
+        [
+          {
+            "id": 1,
+            "code": "INV-001",
+            "quantite": 10,
+            "date": "2022-02-14T09:30:00.000Z",
+            "depotId": "3",
+            "codeInventaire": "ABC123"
+          },
+          {
+            "id": 2,
+            "code": "INV-002",
+            "quantite": 5,
+            "date": "2022-03-01T13:45:00.000Z",
+            "depotId": "3",
+            "codeInventaire": "DEF456"
+          },
+          {
+            "id": 3,
+            "code": "INV-003",
+            "quantite": 20,
+            "date": "2022-04-10T10:00:00.000Z",
+            "depotId": "3",
+            "codeInventaire": "GHI789"
+          },
+          {
+            "id": 4,
+            "code": "INV-004",
+            "quantite": 8,
+            "date": "2022-05-15T14:15:00.000Z",
+            "depotId": "3",
+            "codeInventaire": "JKL012"
+          },
+          {
+            "id": 5,
+            "code": "INV-005",
+            "quantite": 12,
+            "date": "2022-06-20T11:30:00.000Z",
+            "depotId": "3",
+            "codeInventaire": "MNO345"
+          },
+          {
+            "id": 6,
+            "code": "INV-006",
+            "quantite": 3,
+            "date": "2022-07-25T15:45:00.000Z",
+            "depotId": "3",
+            "codeInventaire": "PQR678"
+          }
+        ]
+      ],
+      "mouvements": [],
+      "couts": 0
+    },
+    {
+      "id": 4,
+      "codeDepot": "Dep2006",
+      "nom": "POTATES",
+      "adresse": "23 rue de la paie Sfax",
+      "responsable": "Kefi Ali",
+      "capacite": 369,
+      "articles": [
+        {
+          "id": 16,
+          "nom": "Brosse à dents",
+          "description": "Brosse à dents souple",
+          "prix": 2,
+          "quantite": 30,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Hygiène bucco-dentaire",
+          "dateAjout": "2023-04-08"
+        },
+        {
+          "id": 17,
+          "nom": "Dentifrice",
+          "description": "Dentifrice blanchissant",
+          "prix": 3.5,
+          "quantite": 25,
+          "seuilMinimum": 5,
+          "seuilMaximum": 30,
+          "categorie": "Hygiène bucco-dentaire",
+          "dateAjout": "2023-04-08"
+        },
+        {
+          "id": 18,
+          "nom": "Shampoing",
+          "description": "Shampoing pour cheveux secs",
+          "prix": 6,
+          "quantite": 20,
+          "seuilMinimum": 5,
+          "seuilMaximum": 30,
+          "categorie": "Hygiène corporelle",
+          "dateAjout": "2023-04-10"
+        },
+        {
+          "id": 19,
+          "nom": "Savon",
+          "description": "Savon liquide pour les mains",
+          "prix": 2.5,
+          "quantite": 40,
+          "seuilMinimum": 10,
+          "seuilMaximum": 60,
+          "categorie": "Hygiène corporelle",
+          "dateAjout": "2023-04-10"
+        },
+        {
+          "id": 20,
+          "nom": "Mouchoirs en papier",
+          "description": "Paquet de 100 mouchoirs en papier",
+          "prix": 1.75,
+          "quantite": 60,
+          "seuilMinimum": 10,
+          "seuilMaximum": 100,
+          "categorie": "Hygiène corporelle",
+          "dateAjout": "2023-04-11"
+        },
+        {
+          "id": 31,
+          "nom": "Article 31",
+          "description": "Ceci est la description de l'article 31",
+          "prix": 10.99,
+          "quantite": 50,
+          "seuilMinimum": 10,
+          "seuilMaximum": 100,
+          "categorie": "Catégorie 3",
+          "dateAjout": "2022-01-01T00:00:00Z"
+        },
+        {
+          "id": 32,
+          "nom": "Article 32",
+          "description": "Ceci est la description de l'article 32",
+          "prix": 15.99,
+          "quantite": 100,
+          "seuilMinimum": 20,
+          "seuilMaximum": 200,
+          "categorie": "Catégorie 3",
+          "dateAjout": "2022-01-02T00:00:00Z"
+        },
+        {
+          "id": 33,
+          "nom": "Article 33",
+          "description": "Ceci est la description de l'article 33",
+          "prix": 20.99,
+          "quantite": 75,
+          "seuilMinimum": 15,
+          "seuilMaximum": 150,
+          "categorie": "Catégorie 3",
+          "dateAjout": "2022-01-03T00:00:00Z"
+        },
+        {
+          "id": 34,
+          "nom": "Article 34",
+          "description": "Ceci est la description de l'article 34",
+          "prix": 5.99,
+          "quantite": 200,
+          "seuilMinimum": 50,
+          "seuilMaximum": 500,
+          "categorie": "Catégorie 3",
+          "dateAjout": "2022-01-04T00:00:00Z"
+        },
+        {
+          "id": 35,
+          "nom": "Article 35",
+          "description": "Ceci est la description de l'article 35",
+          "prix": 12.99,
+          "quantite": 90,
+          "seuilMinimum": 25,
+          "seuilMaximum": 250,
+          "categorie": "Catégorie 3",
+          "dateAjout": "2022-01-05T00:00:00Z"
+        },
+        {
+          "id": 1,
+          "nom": "Pomme",
+          "description": "Fruit rouge et rond",
+          "prix": 1.5,
+          "quantite": 20,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Fruits",
+          "dateAjout": "2023-04-06T08:00:00Z"
+        },
+        {
+          "id": 1,
+          "nom": "Pomme",
+          "description": "Fruit rouge et rond",
+          "prix": 1.5,
+          "quantite": 20,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Fruits",
+          "dateAjout": "2023-04-06T08:00:00Z"
+        }
+      ],
+      "inventaires": [],
+      "mouvements": [],
+      "couts": 0
+    },
+    {
+      "id": 5,
+      "codeDepot": "10",
+      "nom": "depotfaa",
+      "adresse": "حي الغابات سبيطلة",
+      "responsable": "ons",
+      "capacite": 20,
+      "articles": [
+        {
+          "id": 1,
+          "nom": "Pomme",
+          "description": "Fruit rouge et rond",
+          "prix": 1.5,
+          "quantite": 20,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Fruits",
+          "dateAjout": "2023-04-06T08:00:00Z"
+        },
+        {
+          "id": 1,
+          "nom": "Pomme",
+          "description": "Fruit rouge et rond",
+          "prix": 1.5,
+          "quantite": 20,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Fruits",
+          "dateAjout": "2023-04-06T08:00:00Z"
+        },
+        {
+          "id": 1,
+          "nom": "Pomme",
+          "description": "Fruit rouge et rond",
+          "prix": 1.5,
+          "quantite": 20,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Fruits",
+          "dateAjout": "2023-04-06T08:00:00Z"
+        }
+      ],
+      "inventaires": [],
+      "mouvements": [],
+      "couts": 0
+    }
+  ],
+  "Mouvement": [],
+  "entrees": [
+    {
+      "id": 5
+    }
+  ],
+  "produits": [],
+  "articles": [
+    {
+      "id": 1,
+      "nom": "Pomme",
+      "description": "Fruit rouge et rond",
+      "prix": 1.5,
+      "quantite": 20,
+      "seuilMinimum": 5,
+      "seuilMaximum": 50,
+      "categorie": "Fruits",
+      "dateAjout": "2023-04-06T08:00:00Z"
+    },
+    {
+      "id": 2,
+      "nom": "Poire",
+      "description": "Fruit jaune et ovale",
+      "prix": 2,
+      "quantite": 15,
+      "seuilMinimum": 3,
+      "seuilMaximum": 30,
+      "categorie": "Fruits",
+      "dateAjout": "2023-04-06T08:00:00Z"
+    },
+    {
+      "id": 3,
+      "nom": "Cahier",
+      "description": "Cahier 100 pages",
+      "prix": 2.5,
+      "quantite": 50,
+      "seuilMinimum": 10,
+      "seuilMaximum": 100,
+      "categorie": "Papeterie",
+      "dateAjout": "2023-04-06"
+    },
+    {
+      "id": 4,
+      "nom": "Stylo",
+      "description": "Stylo à bille noir",
+      "prix": 0.5,
+      "quantite": 100,
+      "seuilMinimum": 20,
+      "seuilMaximum": 200,
+      "categorie": "Papeterie",
+      "dateAjout": "2023-04-06"
+    },
+    {
+      "id": 5,
+      "nom": "Classeur",
+      "description": "Classeur à 4 anneaux",
+      "prix": 7,
+      "quantite": 20,
+      "seuilMinimum": 5,
+      "seuilMaximum": 50,
+      "categorie": "Papeterie",
+      "dateAjout": "2023-04-06"
+    },
+    {
+      "id": 6,
+      "nom": "Tomate",
+      "description": "Tomates mûres et juteuses",
+      "prix": 2.5,
+      "quantite": 200,
+      "seuilMinimum": 20,
+      "seuilMaximum": 300,
+      "categorie": "Légumes",
+      "dateAjout": "2023-03-01"
+    },
+    {
+      "id": 7,
+      "nom": "Concombre",
+      "description": "Concombres frais et croquants",
+      "prix": 1.5,
+      "quantite": 150,
+      "seuilMinimum": 15,
+      "seuilMaximum": 250,
+      "categorie": "Légumes",
+      "dateAjout": "2023-03-05"
+    },
+    {
+      "id": 8,
+      "nom": "Poivron",
+      "description": "Poivrons rouges, verts et jaunes",
+      "prix": 3,
+      "quantite": 100,
+      "seuilMinimum": 10,
+      "seuilMaximum": 150,
+      "categorie": "Légumes",
+      "dateAjout": "2023-03-10"
+    },
+    {
+      "id": 9,
+      "nom": "Banane",
+      "description": "Fruit jaune et allongé",
+      "prix": 1.8,
+      "quantite": 25,
+      "seuilMinimum": 5,
+      "seuilMaximum": 50,
+      "categorie": "Fruits",
+      "dateAjout": "2023-04-07"
+    },
+    {
+      "id": 10,
+      "nom": "Orange",
+      "description": "Fruit orange et rond",
+      "prix": 2.2,
+      "quantite": 30,
+      "seuilMinimum": 5,
+      "seuilMaximum": 50,
+      "categorie": "Fruits",
+      "dateAjout": "2023-04-07"
+    },
+    {
+      "id": 11,
+      "nom": "Feuilles de papier",
+      "description": "Paquet de 100 feuilles de papier blanc",
+      "prix": 4,
+      "quantite": 50,
+      "seuilMinimum": 10,
+      "seuilMaximum": 100,
+      "categorie": "Papeterie",
+      "dateAjout": "2023-04-08"
+    },
+    {
+      "id": 12,
+      "nom": "Crayon à papier",
+      "description": "Crayon à papier HB",
+      "prix": 0.2,
+      "quantite": 200,
+      "seuilMinimum": 20,
+      "seuilMaximum": 200,
+      "categorie": "Papeterie",
+      "dateAjout": "2023-04-08"
+    },
+    {
+      "id": 13,
+      "nom": "Gomme",
+      "description": "Gomme blanche pour effacer le crayon",
+      "prix": 0.3,
+      "quantite": 100,
+      "seuilMinimum": 10,
+      "seuilMaximum": 100,
+      "categorie": "Papeterie",
+      "dateAjout": "2023-04-08"
+    },
+    {
+      "id": 14,
+      "nom": "Courgette",
+      "description": "Courgette verte et croquante",
+      "prix": 1.5,
+      "quantite": 50,
+      "seuilMinimum": 10,
+      "seuilMaximum": 100,
+      "categorie": "Légumes",
+      "dateAjout": "2023-03-15"
+    },
+    {
+      "id": 15,
+      "nom": "Aubergine",
+      "description": "Aubergine violette et savoureuse",
+      "prix": 2.5,
+      "quantite": 35,
+      "seuilMinimum": 5,
+      "seuilMaximum": 50,
+      "categorie": "Légumes",
+      "dateAjout": "2023-03-15"
+    },
+    {
+      "id": 16,
+      "nom": "Brosse à dents",
+      "description": "Brosse à dents souple",
+      "prix": 2,
+      "quantite": 30,
+      "seuilMinimum": 5,
+      "seuilMaximum": 50,
+      "categorie": "Hygiène bucco-dentaire",
+      "dateAjout": "2023-04-08"
+    },
+    {
+      "id": 17,
+      "nom": "Dentifrice",
+      "description": "Dentifrice blanchissant",
+      "prix": 3.5,
+      "quantite": 25,
+      "seuilMinimum": 5,
+      "seuilMaximum": 30,
+      "categorie": "Hygiène bucco-dentaire",
+      "dateAjout": "2023-04-08"
+    },
+    {
+      "id": 18,
+      "nom": "Shampoing",
+      "description": "Shampoing pour cheveux secs",
+      "prix": 6,
+      "quantite": 20,
+      "seuilMinimum": 5,
+      "seuilMaximum": 30,
+      "categorie": "Hygiène corporelle",
+      "dateAjout": "2023-04-10"
+    },
+    {
+      "id": 19,
+      "nom": "Savon",
+      "description": "Savon liquide pour les mains",
+      "prix": 2.5,
+      "quantite": 40,
+      "seuilMinimum": 10,
+      "seuilMaximum": 60,
+      "categorie": "Hygiène corporelle",
+      "dateAjout": "2023-04-10"
+    },
+    {
+      "id": 20,
+      "nom": "Mouchoirs en papier",
+      "description": "Paquet de 100 mouchoirs en papier",
+      "prix": 1.75,
+      "quantite": 60,
+      "seuilMinimum": 10,
+      "seuilMaximum": 100,
+      "categorie": "Hygiène corporelle",
+      "dateAjout": "2023-04-11"
+    },
+    {
+      "id": 21,
+      "nom": "Article 21",
+      "description": "Description de l'article 21",
+      "prix": 10,
+      "quantite": 100,
+      "seuilMinimum": 20,
+      "seuilMaximum": 200,
+      "categorie": "Catégorie 1",
+      "dateAjout": "2023-04-15T12:00:00.000Z"
+    },
+    {
+      "id": 22,
+      "nom": "Article 22",
+      "description": "Description de l'article 22",
+      "prix": 20,
+      "quantite": 50,
+      "seuilMinimum": 10,
+      "seuilMaximum": 100,
+      "categorie": "Catégorie 2",
+      "dateAjout": "2023-04-15T12:00:00.000Z"
+    },
+    {
+      "id": 23,
+      "nom": "Article 23",
+      "description": "Description de l'article 23",
+      "prix": 15,
+      "quantite": 200,
+      "seuilMinimum": 30,
+      "seuilMaximum": 300,
+      "categorie": "Catégorie 1",
+      "dateAjout": "2023-04-15T12:00:00.000Z"
+    },
+    {
+      "id": 24,
+      "nom": "Article 24",
+      "description": "Description de l'article 24",
+      "prix": 5,
+      "quantite": 150,
+      "seuilMinimum": 25,
+      "seuilMaximum": 250,
+      "categorie": "Catégorie 2",
+      "dateAjout": "2023-04-15T12:00:00.000Z"
+    },
+    {
+      "id": 25,
+      "nom": "Article 25",
+      "description": "Description de l'article 25",
+      "prix": 12,
+      "quantite": 75,
+      "seuilMinimum": 15,
+      "seuilMaximum": 150,
+      "categorie": "Catégorie 1",
+      "dateAjout": "2023-04-15T12:00:00.000Z"
+    },
+    {
+      "id": 26,
+      "nom": "Article 26",
+      "description": "Description de l'article 26",
+      "prix": 8,
+      "quantite": 100,
+      "seuilMinimum": 20,
+      "seuilMaximum": 200,
+      "categorie": "Catégorie 2",
+      "dateAjout": "2023-04-15T12:00:00.000Z"
+    },
+    {
+      "id": 27,
+      "nom": "Article 27",
+      "description": "Description de l'article 27",
+      "prix": 25,
+      "quantite": 50,
+      "seuilMinimum": 10,
+      "seuilMaximum": 100,
+      "categorie": "Catégorie 1",
+      "dateAjout": "2023-04-15T12:00:00.000Z"
+    },
+    {
+      "id": 28,
+      "nom": "Article 28",
+      "description": "Ceci est l'article numéro 28",
+      "prix": 10.99,
+      "quantite": 50,
+      "seuilMinimum": 10,
+      "seuilMaximum": 100,
+      "categorie": "Catégorie A",
+      "dateAjout": "2022-05-01T00:00:00Z"
+    },
+    {
+      "id": 29,
+      "nom": "Article 29",
+      "description": "Ceci est l'article numéro 29",
+      "prix": 15.99,
+      "quantite": 20,
+      "seuilMinimum": 5,
+      "seuilMaximum": 50,
+      "categorie": "Catégorie B",
+      "dateAjout": "2022-05-02T00:00:00Z"
+    },
+    {
+      "id": 30,
+      "nom": "Article 30",
+      "description": "Ceci est l'article numéro 30",
+      "prix": 25.99,
+      "quantite": 100,
+      "seuilMinimum": 20,
+      "seuilMaximum": 200,
+      "categorie": "Catégorie C",
+      "dateAjout": "2022-05-03T00:00:00Z"
+    },
+    {
+      "id": 31,
+      "nom": "Article 31",
+      "description": "Ceci est la description de l'article 31",
+      "prix": 10.99,
+      "quantite": 50,
+      "seuilMinimum": 10,
+      "seuilMaximum": 100,
+      "categorie": "Catégorie 3",
+      "dateAjout": "2022-01-01T00:00:00Z"
+    },
+    {
+      "id": 32,
+      "nom": "Article 32",
+      "description": "Ceci est la description de l'article 32",
+      "prix": 15.99,
+      "quantite": 100,
+      "seuilMinimum": 20,
+      "seuilMaximum": 200,
+      "categorie": "Catégorie 3",
+      "dateAjout": "2022-01-02T00:00:00Z"
+    },
+    {
+      "id": 33,
+      "nom": "Article 33",
+      "description": "Ceci est la description de l'article 33",
+      "prix": 20.99,
+      "quantite": 75,
+      "seuilMinimum": 15,
+      "seuilMaximum": 150,
+      "categorie": "Catégorie 3",
+      "dateAjout": "2022-01-03T00:00:00Z"
+    },
+    {
+      "id": 34,
+      "nom": "Article 34",
+      "description": "Ceci est la description de l'article 34",
+      "prix": 5.99,
+      "quantite": 200,
+      "seuilMinimum": 50,
+      "seuilMaximum": 500,
+      "categorie": "Catégorie 3",
+      "dateAjout": "2022-01-04T00:00:00Z"
+    },
+    {
+      "id": 35,
+      "nom": "Article 35",
+      "description": "Ceci est la description de l'article 35",
+      "prix": 12.99,
+      "quantite": 90,
+      "seuilMinimum": 25,
+      "seuilMaximum": 250,
+      "categorie": "Catégorie 3",
+      "dateAjout": "2022-01-05T00:00:00Z"
+    },
+    {
+      "id": 36,
+      "nom": "Article 36",
+      "description": "Ceci est la description de l'article 36",
+      "prix": 18.99,
+      "quantite": 60,
+      "seuilMinimum": 10,
+      "seuilMaximum": 100,
+      "categorie": "Catégorie 3",
+      "dateAjout": "2022-01-06T00:00:00Z"
+    },
+    {
+      "id": 37,
+      "nom": "Article 37",
+      "description": "Ceci est la description de l'article 37",
+      "prix": 8.99,
+      "quantite": 150,
+      "seuilMinimum": 30,
+      "seuilMaximum": 300,
+      "categorie": "Catégorie 3",
+      "dateAjout": "2022-01-07T00:00:00Z"
+    },
+    {
+      "id": 38,
+      "nom": "Article 38",
+      "description": "Description de l'article 38",
+      "prix": 10.99,
+      "quantite": 50,
+      "seuilMinimum": 10,
+      "seuilMaximum": 100,
+      "categorie": "Catégorie 3",
+      "dateAjout": "2023-04-15"
+    },
+    {
+      "id": 39,
+      "nom": "Article 39",
+      "description": "Description de l'article 39",
+      "prix": 15.99,
+      "quantite": 20,
+      "seuilMinimum": 5,
+      "seuilMaximum": 50,
+      "categorie": "Catégorie 4",
+      "dateAjout": "2023-04-15"
+    },
+    {
+      "id": 40,
+      "nom": "Article 40",
+      "description": "Description de l'article 40",
+      "prix": 20.99,
+      "quantite": 10,
+      "seuilMinimum": 2,
+      "seuilMaximum": 20,
+      "categorie": "Catégorie 5",
+      "dateAjout": "2023-04-15"
+    }
+  ]
+}

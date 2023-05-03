@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"
+    integrity="sha512-/MkZ8izQAEr1U6B5U9X86UgrQFQhM/G87RRc/2C+1SfrgbnR7atYpFnGgdBT9lu4fNghP4Twhp+gI1Gqf3Wxqw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container mt-5">
+
+    <div class="row align-items-center">
+      <div class="col-sm-6 col-12 mb-4 mb-sm-0">
+        <!-- Title -->
+        <h1 class="h2 mb-0 ls-tight">Liste des Sorties </h1>
+      </div> <!-- Actions -->
+      <div class="col-sm-6 col-12 text-sm-end">
+        <div class="mx-n1">
+
+
+          <a (click)="ouvrirPageNewSorties()" class="btn d-inline-flex btn-sm btn-primary mx-1">
+            <span class=" pe-2"> <i class="bi bi-plus"></i> </span>
+            <span>Creer une Nouvelle Sortie</span>
+          </a>
+        </div>
+      </div>
+    </div> <!-- Nav -->
+
+    <table class="table table-hover">
+      <thead>
+        <tr>
+
+
+          <th>ID</th>
+          <th>Code</th>
+          <th>Produit ID</th>
+          <th>Quantité</th>
+          <th>Date d'entrée</th>
+          <th>Dépôt ID</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let nouvellesorties of Sorties">
+          <td>{{ nouvellesorties.id }}</td>
+          <td>{{ nouvellesorties.code }}</td>
+          <td>{{ nouvellesorties.produitId }}</td>
+          <td>{{ nouvellesorties.quantite }}</td>
+          <td>{{ nouvellesorties.dateEntree }}</td>
+          <td>{{ nouvellesorties.depotId }}</td>
+
+          <td>
+            <button (click)="ouvrirPageEditSorties( nouvellesorties.id )"
+              class="btn btn-sm btn-outline-primary me-2">Modifier</button>
+            <button (click)="ouvrirPageDeleteSorties( nouvellesorties.id )"
+              class="btn btn-sm btn-outline-danger">Supprimer</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.min.js"
+    integrity="sha512-EOheDwp/s0faL88d+k0RvR+OE9pZgrFvwIhCcC8JgfwryF0tTcTtMx/xO8vxv96rkX9h9ZnuHhhW4ey8DJvzPw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

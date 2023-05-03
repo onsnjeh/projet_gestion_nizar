@@ -1,0 +1,70 @@
+Pour l'application web Angular de gestion des produits, des achats et des ventes, les principales entités peuvent être les suivantes :
+
+    Dépôt : représente un lieu de stockage physique où les produits sont stockés.
+    Produit : représente un article ou un bien pouvant être vendu ou acheté, avec un nom, une description, une catégorie, un prix unitaire, etc.
+    Stock : représente la quantité de chaque produit disponible dans chaque dépôt.
+    Mouvement : représente une opération d'entrée ou de sortie d'un produit d'un dépôt, avec la quantité et la date de l'opération.
+
+
++----------------------+
+| Accueil              |
++----------------------+
+| Dépôts               |
+| + Ajouter un dépôt    |
+| + Liste des dépôts   |
++----------------------+
+| Produits             |
+| + Ajouter un produit |
+| + Liste des produits |
++----------------------+
+| Stock                |
+| + Voir le stock      |
+| + Liste des mouvements|
+| + Liste des stocks par produit et par dépôt|
+| + Historique des stocks par produit et par dépôt|
++----------------------+
+| Entrées              |
+| + Nouvelle entrée    |
+| + Liste des entrées  |
++----------------------+
+| Sorties              |
+| + Nouvelle sortie    |
+| + Liste des sorties  |
++----------------------+
+| Inventaire           |
+| + Nouvel inventaire  |
+| + Liste des inventaires|
++----------------------+
+
+
+
+
++----------------------+
+| Accueil              |
++----------------------+
+| Dépôts               |
+| + Ajouter un dépôt    |
+| + Liste des dépôts   |
++----------------------+
+| Produits             |
+| + Ajouter un produit |
+| + Liste des produits |
++----------------------+
+| Stock                |
+| + Voir le stock      |
+| + Liste des stocks par produit et par dépôt|
+| + Historique des stocks par produit et par dépôt|
+| + Mouvements d'entrée |
+|   + Nouvelle entrée  |
+|   + Liste des entrées|
+| + Mouvements de sortie|
+|   + Nouvelle sortie  |
+|   + Liste des sorties|
++----------------------+
+| Inventaire           |
+| + Nouvel inventaire  |
+| + Liste des inventaires|
++----------------------+
+
+
+

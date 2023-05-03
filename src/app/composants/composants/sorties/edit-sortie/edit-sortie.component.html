@@ -1,0 +1,39 @@
+
+
+
+<div class="container mt-5">
+    <h1 class="h2 mb-4">Modifier le depot {{ Sorties?.id}} </h1>
+    <form (submit)="onSubmit()">
+        <div class="form-group">
+            <label for="id">ID:</label>
+            <input type="number" id="id" [(ngModel)]="Sorties.id" name="id" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="code">Code </label>
+            <input type="text" id="codeSortie" [(ngModel)]="Sorties.code" name="code" class="form-control">
+          </div>
+  
+          <div class="form-group">
+            <label for="date">date Entree:</label>
+            <input type="date" id="dateEntree" [(ngModel)]="Sorties.dateEntree" name="dateEntree" class="form-control">
+          </div>
+  
+          <div class="form-group">
+            <label for="quantite">quantite</label>
+            <input type="quantite" id="quantite" [(ngModel)]="Sorties.quantite" name="quantite" class="form-control">
+          </div>
+          
+          <div class="form-group">
+            <label for="produitId">produitId:</label>
+            <input type="text" id="produitId" [(ngModel)]="Sorties.produitId" name="produitId" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="depotId">depotId:</label>
+            <input type="text" id="depotId" [(ngModel)]="Sorties.depotId" name="depotId" class="form-control">
+          </div>
+       <br>
+        <button type="submit" class="btn btn-primary"> Sauvegarder  </button>
+
+     </form>
+  </div>
+  

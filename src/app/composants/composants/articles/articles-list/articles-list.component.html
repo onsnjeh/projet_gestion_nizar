@@ -1,0 +1,59 @@
+
+<div>
+  <h3>Liste des Articles   :</h3>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Nom</th>
+      <th>Prix</th>
+      <th>Quantité</th>
+
+      <th>Catégorie</th>
+      <th>Date d'ajout</th>
+      <th>Affecter article à un Dépot</th>
+    </tr>
+  </thead>
+  <tbody>
+
+       <tr *ngFor="let article of getArticlesForPage()">
+
+        <td>{{ article.id }}</td>
+        <td>{{ article.nom }}</td>
+        <td>{{ article.prix }}</td>
+        <td>{{ article.quantite }}</td>
+    
+        <td>{{ article.categorie }}</td>
+        <td>{{ article.dateAjout  | date }}</td>
+
+        <td style="text-align: center;">
+            <button (click)="ouvrirPopup(article)" class="mat-icon-button custom-button">
+              <mat-icon>input</mat-icon>
+            </button>
+          </td>
+
+        <td>
+            <button (click)="modifierArticle(article.id)" class="mat-icon-button">
+              <mat-icon>edit</mat-icon>
+            </button>
+            <button (click)="supprimerArticle(article.id)" class="mat-icon-button">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+
+    </tr>
+  </tbody>
+</table>
+
+  <div class="pagination">
+    <button *ngFor="let page of pages()" [class.active]="currentPage === page" (click)="currentPage = page">
+      {{ page }}
+    </button>
+  </div>
+
+
+
+
+
+</div>
