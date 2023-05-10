@@ -5,8 +5,7 @@ export class Article {
       public description: string,
       public prix: number,
       public quantite: number,
-      public seuilMinimum: number,
-      public seuilMaximum: number,
+   
       public categorie: string,
       public dateAjout: Date
     ) {}

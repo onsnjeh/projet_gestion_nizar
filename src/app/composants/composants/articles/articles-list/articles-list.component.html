@@ -1,6 +1,13 @@
 
-<div>
-  <h3>Liste des Articles   :</h3>
+<div class="container mt-5">
+ 
+  <div class="row align-items-center">
+    <div class="col-sm-6 col-12 mb-4 mb-sm-0">
+        <!-- Title -->
+        <h1 class="h2 mb-0 ls-tight">Liste des Articles  </h1>
+    </div> <!-- Actions -->
+   
+</div> <!-- Nav -->
 
 <table class="table table-hover">
   <thead>
@@ -9,7 +16,6 @@
       <th>Nom</th>
       <th>Prix</th>
       <th>Quantité</th>
-
       <th>Catégorie</th>
       <th>Date d'ajout</th>
       <th>Affecter article à un Dépot</th>
@@ -37,6 +43,7 @@
             <button (click)="modifierArticle(article.id)" class="mat-icon-button">
               <mat-icon>edit</mat-icon>
             </button>
+            &nbsp;
             <button (click)="supprimerArticle(article.id)" class="mat-icon-button">
               <mat-icon>delete</mat-icon>
             </button>

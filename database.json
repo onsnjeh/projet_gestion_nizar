@@ -5,7 +5,7 @@
       "name": "Mohamed Zidi",
       "email": "Zid@gmail.com",
       "phone": "260011001",
-      "role": "Manager de stock / Gestionnaires de produits",
+      "role": "Manager de stock ",
       "password": "manager"
     },
     {
@@ -545,6 +545,24 @@
   "entrees": [
     {
       "id": 5
+    },
+    {
+      "id": 6,
+      "code": "",
+      "produitId": "",
+      "quantite": 0,
+      "dateEntree": "2023-05-10T11:30:44.172Z",
+      "depotId": "",
+      "codeEntree": ""
+    },
+    {
+      "id": 1,
+      "code": "",
+      "produitId": "1",
+      "quantite": "011",
+      "dateEntree": "1111-11-11",
+      "depotId": "1",
+      "codeEntree": ""
     }
   ],
   "produits": [],
@@ -988,6 +1006,15 @@
       "seuilMaximum": 20,
       "categorie": "Catégorie 5",
       "dateAjout": "2023-04-15"
+    },
+    {
+      "id": 41,
+      "nom": "",
+      "description": "",
+      "prix": 0,
+      "quantite": 0,
+      "categorie": "",
+      "dateAjout": "2023-05-10T11:49:23.202Z"
     }
   ]
 }
