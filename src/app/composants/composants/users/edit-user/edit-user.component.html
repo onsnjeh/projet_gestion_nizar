@@ -3,7 +3,7 @@
 
 
 <div class="container mt-5">
-    <h1 class="h2 mb-4">Modifier l'utilisateur {{ user.name }} </h1>
+  <h1 class="h2 mb-4">Modifier l'utilisateur {{ user.name }} </h1>
     <form (ngSubmit)="onSubmit()">
       <div class="form-group">
         <label for="id">ID:</label>
@@ -26,8 +26,8 @@
         <input type="text" id="role" [(ngModel)]="user.role" name="role" class="form-control">
       </div>
       <br>
-      <div class="row"> <div class="col-8"></div>
-       <div class="col-4"><button type="submit" class="btn btn-primary">Modifier</button></div> 
+      <div class="row"> <div class="col-9"></div>
+       <div class="col-3"><button type="submit" class="btn btn-primary">Modifier</button></div> 
       </div> 
       <br>
       </form>
